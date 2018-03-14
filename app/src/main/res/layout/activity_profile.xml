@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context="com.sas_apps.quickblox.profile.ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_user"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_person" />
+
+    <EditText
+        android:id="@+id/edit_oldPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_user"
+        android:hint="Old Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edit_newPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_oldPassword"
+        android:hint="New Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edit_newFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_newPassword"
+        android:hint="Full name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_newEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_newFullName"
+        android:hint="New Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edit_newPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_newEmail"
+        android:hint="Phone number"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/button_updateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_newPhoneNumber"
+        android:text="Update profile" />
+
+</RelativeLayout>
